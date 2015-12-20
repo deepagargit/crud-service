@@ -1,0 +1,25 @@
+
+
+Build Container image
+./build
+
+List Container image
+sudo docker images | grep crud 
+
+Start a Container
+docker run -it -p 8080:8080 --name p1 deepagar/crud-service
+
+List Containers
+sudo docker ps -a
+
+Login to Container
+sudo docker exec -i -t p4 bash
+
+Login to docker
+sudo docker login
+
+Push Container image to docker repository
+sudo docker push deepagar/crud-service
+
+
+
